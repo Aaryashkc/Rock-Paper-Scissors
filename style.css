@@ -15,27 +15,27 @@ button{
 }
 
 .rocky{
-  height: 70px;
+  height: 50px;
 
 }
 .result-moves{
   margin-bottom: 5%;
 
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
 }
 
 .button-snap{
   background-color: transparent;
   border: 2px solid white;
-  width: 130px;
-  height: 130px;
-  border-radius: 65px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   margin-right: 10px;
 }
 
 .result-view{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   margin-top: 40px;
 }
@@ -65,4 +65,84 @@ button{
 
 .reset-button:hover {
   background-color: #777;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .title-top {
+    font-size: 36px;
+  }
+
+  .button-snap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 5px;
+  }
+
+  .result-view {
+    font-size: 24px;
+  }
+
+  .score-result {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .reset-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  /* Centering elements on mobile */
+  .button-snap {
+    margin-bottom: 10px;
+  }
+
+  .result-moves {
+    font-size: 16px;
+  }
+
+  /* Adjusting the image size for mobile */
+  .rocky {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* Adjusting margins and layout for better mobile alignment */
+  .score-result {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+
+  .reset-button {
+    font-size: 0.85em;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-top {
+    font-size: 28px;
+  }
+
+  .button-snap {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+  }
+
+  .result-view {
+    font-size: 20px;
+  }
+
+  .score-result {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .reset-button {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
 }
